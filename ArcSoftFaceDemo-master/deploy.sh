@@ -39,4 +39,4 @@ cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPS
 
 # 启动Tomcat
 cd /testjar
-sh java -jar arcsoft-face-1.0.0-SNAPSHOT.jar &
+sudo java -jar arcsoft-face-1.0.0-SNAPSHOT.jar &
