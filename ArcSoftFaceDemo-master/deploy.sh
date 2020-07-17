@@ -33,7 +33,7 @@ mvn clean install
 
 # 复制新的工程
 # cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.jar $TOMCAT_APP_PATH/webapps/
-cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.jar /testjar
+cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.jar /testjar/
 # cd $TOMCAT_APP_PATH/webapps/
 # mv arcsoft-face-1.0.0-SNAPSHOT.war ROOT.war
 
