@@ -6,7 +6,7 @@
     <groupId>com.arcsoft</groupId>
     <artifactId>arcsoft-face</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>arcsoft-face-demo</name>
     <description>人脸识别服务端完整demo</description>
