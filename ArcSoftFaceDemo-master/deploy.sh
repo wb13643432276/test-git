@@ -32,7 +32,7 @@ rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f $TOMCAT_APP_PATH/webapps/ArcSoftFaceDemo-master.war
 
 # 复制新的工程
-cp $PROJ_PATH$PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/ArcSoftFaceDemo-master.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/ArcSoftFaceDemo-master.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv ArcSoftFaceDemo-master.war ROOT.war
