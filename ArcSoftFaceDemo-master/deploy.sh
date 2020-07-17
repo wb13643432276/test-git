@@ -29,13 +29,13 @@ killTomcat
 # 删除原有工程
 rm -rf $TOMCAT_APP_PATH/webapps/ROOT
 rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
-rm -f $TOMCAT_APP_PATH/webapps/ArcSoftFaceDemo-master.war
+rm -f $TOMCAT_APP_PATH/webapps/arcsoft-face-1.0.0-SNAPSHOT.war
 
 # 复制新的工程
-cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/ArcSoftFaceDemo-master.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
-mv ArcSoftFaceDemo-master.war ROOT.war
+mv arcsoft-face-1.0.0-SNAPSHOT.war ROOT.war
 
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/
