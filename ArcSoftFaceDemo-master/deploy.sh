@@ -11,11 +11,11 @@
 ### base 函数
 killTomcat()
 {
-    pid=`ps -ef|grep tomcat|grep java|awk '{print $2}'`
-    echo "tomcat Id list :$pid"
+    pid=`ps -ef|grep arcsoft-face|grep java|awk '{print $2}'`
+    echo "arcsoft-face Id list :$pid"
     if [ "$pid" = "" ]
     then
-      echo "no tomcat pid alive"
+      echo "no arcsoft-face pid alive"
     else
       kill -9 $pid
     fi
@@ -24,19 +24,19 @@ cd $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master
 mvn clean install
 
 # 停tomcat
-killTomcat
+# killTomcat
 
 # 删除原有工程
-rm -rf $TOMCAT_APP_PATH/webapps/ROOT
-rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
-rm -f $TOMCAT_APP_PATH/webapps/arcsoft-face-1.0.0-SNAPSHOT.war
+# rm -rf $TOMCAT_APP_PATH/webapps/ROOT
+# rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
+# rm -f $TOMCAT_APP_PATH/webapps/arcsoft-face-1.0.0-SNAPSHOT.war
 
 # 复制新的工程
-cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.war $TOMCAT_APP_PATH/webapps/
-
-cd $TOMCAT_APP_PATH/webapps/
-mv arcsoft-face-1.0.0-SNAPSHOT.war ROOT.war
+# cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.jar $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.jar /testjar
+# cd $TOMCAT_APP_PATH/webapps/
+# mv arcsoft-face-1.0.0-SNAPSHOT.war ROOT.war
 
 # 启动Tomcat
-cd $TOMCAT_APP_PATH/
-sh bin/startup.sh
+cd /testjar
+sh java -jar arcsoft-face-1.0.0-SNAPSHOT.jar &
