@@ -30,6 +30,7 @@ mvn clean install
 # rm -rf $TOMCAT_APP_PATH/webapps/ROOT
 # rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 # rm -f $TOMCAT_APP_PATH/webapps/arcsoft-face-1.0.0-SNAPSHOT.war
+rm -f /testjar/arcsoft-face-1.0.0-SNAPSHOT.jar
 
 # 复制新的工程
 # cp $PROJ_PATH/arcsoftface/ArcSoftFaceDemo-master/target/arcsoft-face-1.0.0-SNAPSHOT.jar $TOMCAT_APP_PATH/webapps/
